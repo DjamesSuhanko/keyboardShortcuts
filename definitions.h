@@ -1,0 +1,105 @@
+#define KEY_LEFT_CTRL     0x80
+#define KEY_LEFT_SHIFT    0x81
+#define KEY_LEFT_ALT      0x82
+#define KEY_LEFT_GUI      0x83
+#define KEY_RIGHT_CTRL    0x84
+#define KEY_RIGHT_SHIFT   0x85
+#define KEY_RIGHT_ALT     0x86
+#define KEY_RIGHT_GUI     0x87
+#define KEY_UP_ARROW      0xDA
+#define KEY_DOWN_ARROW    0xD9
+#define KEY_LEFT_ARROW    0xD8
+#define KEY_RIGHT_ARROW   0xD7
+#define KEY_BACKSPACE     0xB2
+#define KEY_TAB           0xB3
+#define KEY_RETURN        0xB0
+#define KEY_ESC           0xB1
+#define KEY_INSERT        0xD1
+#define KEY_DELETE        0xD4
+#define KEY_PAGE_UP       0xD3
+#define KEY_PAGE_DOWN     0xD6
+#define KEY_HOME          0xD2
+#define KEY_END           0xD5
+#define KEY_CAPS_LOCK     0xC1
+#define KEY_F1            0xC2
+#define KEY_F2            0xC3
+#define KEY_F3            0xC4
+#define KEY_F4            0xC5
+#define KEY_F5            0xC6
+#define KEY_F6            0xC7
+#define KEY_F7            0xC8
+#define KEY_F8            0xC9
+#define KEY_F9            0xCA
+#define KEY_F10           0xCB
+#define KEY_F11           0xCC
+#define KEY_F12           0xCD
+#define KEY_F13           0xF0
+#define KEY_F14           0xF1
+#define KEY_F15           0xF2
+#define KEY_F16           0xF3
+#define KEY_F17           0xF4
+#define KEY_F18           0xF5
+#define KEY_F19           0xF6
+#define KEY_F20           0xF7
+#define KEY_F21           0xF8
+#define KEY_F22           0xF9
+#define KEY_F23           0xFA
+#define KEY_F24           0xFB
+
+// Custom definitions
+#define CTRL_KEY_F13      50
+#define CTRL_KEY_F14      49
+#define CTRL_KEY_F15      48
+#define CTRL_KEY_F16      47
+#define CTRL_KEY_F17      46
+#define CTRL_KEY_F18      45
+#define CTRL_KEY_F19      44
+#define CTRL_KEY_F20      43
+#define CTRL_KEY_F21      42
+#define CTRL_KEY_F22      41
+#define CTRL_KEY_F23      40
+#define CTRL_KEY_F24      39
+#define ALT_KEY_F13       38
+#define ALT_KEY_F14       37
+#define ALT_KEY_F15       36
+#define ALT_KEY_F16       35
+#define ALT_KEY_F17       34
+#define ALT_KEY_F18       33
+#define ALT_KEY_F19       32
+#define ALT_KEY_F20       31
+#define ALT_KEY_F21       30
+#define ALT_KEY_F22       29
+#define ALT_KEY_F23       28
+#define ALT_KEY_F24       27
+
+byte customKey; // Retorna o valor da tecla ou atalho pressionado
+
+// Shortcut keys
+const byte CTRL_ROWS = 24; //four rows
+const byte CTRL_COLS = 3; //four columns
+unsigned int hold_Keys[CTRL_ROWS][CTRL_COLS] = {
+  {KEY_LEFT_CTRL, KEY_F13, 50},
+  {KEY_LEFT_CTRL, KEY_F14, 49},
+  {KEY_LEFT_CTRL, KEY_F15, 48},
+  {KEY_LEFT_CTRL, KEY_F16, 47},
+  {KEY_LEFT_CTRL, KEY_F17, 46},
+  {KEY_LEFT_CTRL, KEY_F18, 45},
+  {KEY_LEFT_CTRL, KEY_F19, 44},
+  {KEY_LEFT_CTRL, KEY_F20, 43},
+  {KEY_LEFT_CTRL, KEY_F21, 42},
+  {KEY_LEFT_CTRL, KEY_F22, 41},
+  {KEY_LEFT_CTRL, KEY_F23, 40},
+  {KEY_LEFT_CTRL, KEY_F24, 39},
+  {KEY_LEFT_ALT, KEY_F13, 38},
+  {KEY_LEFT_ALT, KEY_F14, 37},
+  {KEY_LEFT_ALT, KEY_F15, 36},
+  {KEY_LEFT_ALT, KEY_F16, 35},
+  {KEY_LEFT_ALT, KEY_F17, 34},
+  {KEY_LEFT_ALT, KEY_F18, 33},
+  {KEY_LEFT_ALT, KEY_F19, 32},
+  {KEY_LEFT_ALT, KEY_F20, 31},
+  {KEY_LEFT_ALT, KEY_F21, 30},
+  {KEY_LEFT_ALT, KEY_F22, 29},
+  {KEY_LEFT_ALT, KEY_F23, 28},
+  {KEY_LEFT_ALT, KEY_F24, 27}
+};
